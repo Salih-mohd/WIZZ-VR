@@ -15,6 +15,10 @@ public class FireSpell : SpellBase
 
         //if (data.castSfx)
         //    AudioSource.PlayClipAtPoint(data.castSfx, castPoint.position);
-        Debug.Log("fireBall casted");
+        Instantiate(projectilePrefab, castPoint.position,castPoint.rotation,castPoint);
+
+
+
+        Debug.Log("Thunder casted");
     }
 }

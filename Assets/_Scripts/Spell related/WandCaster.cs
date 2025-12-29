@@ -3,22 +3,36 @@ using UnityEngine;
 
 public class WandCaster : MonoBehaviour
 {
+
+    public static WandCaster instance;
+
+
     [SerializeField] Transform castPoint;
     [SerializeField] SpellBase currentSpell;
     [SerializeField] SpellManager spellManager;
 
     bool canCast = true;
 
-    public void Cast(int index)
+
+    private void Awake()
     {
-        Debug.Log("called cast");
-        if (castPoint == false || currentSpell == null) return;
+        instance = this;
+    }
+
+
+    public void Cast(string spell)
+    {
+        Debug.Log("called cast in wand caster");
+
+        //if (castPoint == false || currentSpell == null) return;
 
         if (spellManager.spells.Count != 0)
         {
-            currentSpell = spellManager.spells[index];
+            //currentSpell = spellManager.spells[index];
+            currentSpell = spellManager.spells[spell];
 
             StartCoroutine(CastRoutine());
+            Debug.Log("called cast routine");
         }
         else
         {

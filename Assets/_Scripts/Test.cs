@@ -1,27 +1,23 @@
+using Meta.WitAi;
+using Meta.WitAi.Configuration;
+using Meta.WitAi.Json;
+using Oculus.Voice;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Test : MonoBehaviour
 {
+    public AppVoiceExperience voice;
 
-    bool curs=false;
-    private void Update()
+    void Start()
     {
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    if(!curs)
-        //    {
-        //        Cursor.lockState = CursorLockMode.Locked;
-        //        Cursor.visible = curs;
-        //        curs = true;
-        //    }
-        //    else
-        //    {
-        //        curs = false;   
-        //        Cursor.lockState= CursorLockMode.None;
-        //        Cursor.visible = curs;
-        //    }
-            
-        //}
+        Debug.Log("Sending TEXT request to Wit");
+
+        voice.Activate("go fire spell");
+    }
+
+    public void OnWitResponse(WitResponseNode response)
+    {
+        Debug.Log("RAW TEXT RESPONSE:\n" + response.ToString());
     }
 }
