@@ -7,17 +7,24 @@ using UnityEngine.InputSystem;
 
 public class Test : MonoBehaviour
 {
-    public AppVoiceExperience voice;
+    //public AppVoiceExperience voice;
 
-    void Start()
+    //void Start()
+    //{
+    //    Debug.Log("Sending TEXT request to Wit");
+
+    //    voice.Activate("go fire spell");
+    //}
+
+    //public void OnWitResponse(WitResponseNode response)
+    //{
+    //    Debug.Log("RAW TEXT RESPONSE:\n" + response.ToString());
+    //}
+
+    public void TestDebug()
     {
-        Debug.Log("Sending TEXT request to Wit");
-
-        voice.Activate("go fire spell");
+        Debug.Log("Hovering");
     }
 
-    public void OnWitResponse(WitResponseNode response)
-    {
-        Debug.Log("RAW TEXT RESPONSE:\n" + response.ToString());
-    }
+
 }

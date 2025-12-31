@@ -33,10 +33,11 @@ public class SpellManager : MonoBehaviour
         if (other.gameObject.CompareTag("Spell"))
         {
 
-            Debug.Log("added spell");
+            
             //spells.Add(other.gameObject.GetComponent<SpellBase>());
             if (!spells.ContainsKey(other.gameObject.name))
             {
+                Debug.Log("added spell--> " + other.gameObject.name);
                 spells.Add(other.gameObject.name, other.gameObject.GetComponent<SpellBase>());
             }
             

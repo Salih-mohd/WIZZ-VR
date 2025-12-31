@@ -10,7 +10,7 @@ public class FlySpell : SpellBase
             if(hit.collider != null)
             {
                 var rb=hit.collider.gameObject.GetComponent<Rigidbody>();
-                rb.AddForce((Vector3.forward+Vector3.up)*2f,ForceMode.Impulse);
+                rb.AddForce(Vector3.up*5f,ForceMode.Impulse);
                 Debug.Log("force added");
             }
         }

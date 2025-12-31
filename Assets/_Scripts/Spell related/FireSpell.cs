@@ -3,7 +3,8 @@ using UnityEngine;
 public class FireSpell : SpellBase
 {
     [SerializeField] GameObject projectilePrefab;
-    [SerializeField] float speed = 20f;
+    [SerializeField] float speed = 5f;
+    float spawnOffset = 0.05f;
 
     public override void Cast(Transform castPoint)
     {
@@ -15,10 +16,13 @@ public class FireSpell : SpellBase
 
         //if (data.castSfx)
         //    AudioSource.PlayClipAtPoint(data.castSfx, castPoint.position);
-        Instantiate(projectilePrefab, castPoint.position,castPoint.rotation,castPoint);
+        Vector3 spawnPos = castPoint.position + castPoint.forward * spawnOffset;
+
+        var obj=Instantiate(projectilePrefab, spawnPos, castPoint.rotation);
+        obj.GetComponent<Rigidbody>().AddForce(castPoint.forward*speed,ForceMode.Impulse);
 
 
 
-        Debug.Log("Thunder casted");
+        Debug.Log("go casted");
     }
 }

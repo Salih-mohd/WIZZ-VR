@@ -109,11 +109,11 @@ public class VoiceManagerTest : MonoBehaviour
 
     void HandleKeyword(string text)
     {
-        if (text.Contains("thunder"))
+        if (text.Contains("go"))
         {
             //fireCube.SetActive(false);
 
-            WandCaster.instance.Cast("thunder");
+            WandCaster.instance.Cast("go");
         }
 
         if (text.Contains("up"))
