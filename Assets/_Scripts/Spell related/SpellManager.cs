@@ -7,7 +7,9 @@ public class SpellManager : MonoBehaviour
 
     public static SpellManager Instance;
 
-    public event Action FireSpell;
+    public SpellBase fireSpell;
+
+    //public event Action FireSpelll;
     public event Action DestroySpell;
 
     public Dictionary<string,SpellBase> spells = new Dictionary<string,SpellBase>(); 
@@ -17,6 +19,7 @@ public class SpellManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        spells.Add("go", fireSpell);
     }
 
     //public void HandleIntent(string intent)
@@ -39,6 +42,7 @@ public class SpellManager : MonoBehaviour
             {
                 Debug.Log("added spell--> " + other.gameObject.name);
                 spells.Add(other.gameObject.name, other.gameObject.GetComponent<SpellBase>());
+                other.gameObject.SetActive(false);
             }
             
         }

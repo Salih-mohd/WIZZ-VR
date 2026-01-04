@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\VoiceManagerTest.cs" />
     <Compile Include="Assets\Vosk\Scripts\RecognitionResult.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\Model.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyManager.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoskResultText.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoiceProcessor.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\VoskRecognizer.cs" />
@@ -94,6 +96,7 @@
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libstdc++-6.dll" />
     <None Include="Assets\Vosk\ThirdParty\Zip\Ionic.Zip.Unity.XML" />
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libgcc_s_seh-1.dll" />
+    <None Include="Assets\3D Items - Wand Pack\Read Me.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
