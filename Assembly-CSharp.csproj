@@ -66,6 +66,7 @@
     <Compile Include="Assets\_Scripts\Enemy\EnemyAI.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\Model.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyManager.cs" />
+    <Compile Include="Assets\Engine machineTask\Scripts\ForParts.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoskResultText.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoiceProcessor.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\VoskRecognizer.cs" />
@@ -79,24 +80,56 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\Vosk.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoskSpeechToText.cs" />
+    <Compile Include="Assets\Engine machineTask\Scripts\neighbour.cs" />
     <Compile Include="Assets\_Scripts\OnButtonPress.cs" />
     <Compile Include="Assets\_Scripts\SO\SpellData.cs" />
     <Compile Include="Assets\Vosk\ThirdParty\Vosk\SpkModel.cs" />
     <Compile Include="Assets\_Scripts\Spell related\VoiceIntendHandler.cs" />
+    <Compile Include="Assets\Engine machineTask\Scripts\CustomeInteractor.cs" />
     <Compile Include="Assets\_Scripts\Spell related\FlySpell.cs" />
     <Compile Include="Assets\Vosk\Scripts\VoskDialogText.cs" />
     <Compile Include="Assets\_Scripts\Spell related\FireSpell.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Vosk\ThirdParty\Zip\Ionic.Zip.Unity.dll" />
     <None Include="Assets\Vosk\ThirdParty\Zip\License.txt" />
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libwinpthread-1.dll" />
+    <None Include="Assets\EmaceArt\Slavic World Free\Plugin\Grass.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\InfinityPBR - Magic Pig Games\Projectile Factory\Asset Store Integrations\INTEGRATIONS READ ME.txt" />
+    <None Include="Assets\Engine machineTask\Goldman,Josefin_Sans,Shadows_Into_Light\Josefin_Sans\OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libvosk.dll" />
+    <None Include="Assets\EmaceArt\Slavic World Free\URP_Support\URP Info.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\Engine machineTask\Goldman,Josefin_Sans,Shadows_Into_Light\Josefin_Sans\README.txt" />
+    <None Include="Assets\Engine machineTask\Goldman,Josefin_Sans,Shadows_Into_Light\Shadows_Into_Light\OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Engine machineTask\Goldman,Josefin_Sans,Shadows_Into_Light\Goldman\OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libstdc++-6.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Vosk\ThirdParty\Zip\Ionic.Zip.Unity.XML" />
     <None Include="Assets\Vosk\ThirdParty\Vosk\Plugins\Windows\libgcc_s_seh-1.dll" />
+    <None Include="Assets\EmaceArt\Slavic World Free\Thanks and checkout this\Info.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\3D Items - Wand Pack\Read Me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
