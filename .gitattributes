@@ -1,1 +1,2 @@
+*.fbx filter=lfs diff=lfs merge=lfs -text
 Assets/Engine[[:space:]]machineTask/disassembled_v8_engine_block.fbx filter=lfs diff=lfs merge=lfs -text
